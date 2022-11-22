@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <Container>
       <Row>
-        <Col className="">
+        <Col className="Home__Header">
           <div className="">
             <p>Welcome!</p>
             <p>CryptoHouse</p>
