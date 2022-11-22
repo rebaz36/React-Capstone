@@ -10,6 +10,19 @@ import { getAssests } from '../Redux/cryptoSlice';
 
 const Home = () => {
   const dispatch = useDispatch();
+  const assetList = useSelector((state) => state.cryptos);
+  useEffect(() => {
+    if (!assetList.length) {
+      dispatch(getAssests());
+    }
+  });
+  const [searchcoin, setSearchcoin] = useState('');
+  const onSearch = (e) => {
+    setSearchcoin(e.target.value);
+  };
+  const searched = assetList.filter(
+    (filteredCoin) => filteredCoin.name.toLowerCase().includes(searchcoin.toLowerCase()) || filteredCoin.symbol.toLowerCase().includes(searchcoin.toLowerCase()),
+  );
 
   return (
     <Container>
