@@ -1,0 +1,11 @@
+@import-normalize;
+
+// Utilities
+@import "./Tools/toRem.scss";
+
+// Globals and other styles before the components
+// And pages take effect!
+@import "./global.scss";
+
+// Components, put component B that depends on A after A's import
+
