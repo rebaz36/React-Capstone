@@ -17,10 +17,10 @@ const Detail = () => {
   return (
     <Container>
       <Row>
-        <Col className="welcome">
-          <div className="welcome-body">
+        <Col className="">
+          <div className="">
             <Image src={detail.icon} />
-            <p className="detail-price">
+            <p className="">
               $
               {detail.price}
             </p>
@@ -28,32 +28,32 @@ const Detail = () => {
         </Col>
       </Row>
       <Row>
-        <Col xs={12} className="detail-col-odd">
-          <span className="header">Coin name :</span>
+        <Col xs={12} className="">
+          <span className="">Coin name :</span>
           <span>{detail.name}</span>
         </Col>
-        <Col xs={12} className="detail-col">
-          <span className="header">Coin symbol :</span>
+        <Col xs={12} className="">
+          <span className="">Coin symbol :</span>
           <span>{detail.symbol}</span>
         </Col>
-        <Col xs={12} className="detail-col-odd">
-          <span className="header">Ranking :</span>
+        <Col xs={12} className="">
+          <span className="">Ranking :</span>
           <span>{detail.rank}</span>
         </Col>
-        <Col xs={12} className="detail-col">
-          <span className="header">Price :</span>
+        <Col xs={12} className="">
+          <span className="">Price :</span>
           <span>{detail.price}</span>
         </Col>
-        <Col xs={12} className="detail-col-odd">
-          <span className="header"> Market cap :</span>
+        <Col xs={12} className="">
+          <span className=""> Market cap :</span>
           <span>{detail.marketCap}</span>
         </Col>
-        <Col xs={12} className="detail-col">
-          <span className="header"> Price change week :</span>
+        <Col xs={12} className="">
+          <span className=""> Price change week :</span>
           <span>{detail.priceChange1w}</span>
         </Col>
-        <Col xs={12} className="detail-col-odd">
-          <span className="header"> Avail. supply :</span>
+        <Col xs={12} className="">
+          <span className=""> Avail. supply :</span>
           <span>{detail.availableSupply}</span>
         </Col>
       </Row>
