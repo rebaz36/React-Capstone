@@ -1,7 +1,9 @@
-import React from 'react';
+// import './Nav.css';
 
-export default function Nav() {
-  return (
-    <div>Nav</div>
-  );
-}
+const Nav = () => (
+  <nav className="">
+    <h1>CryptoHouse</h1>
+  </nav>
+);
+
+export default Nav;
