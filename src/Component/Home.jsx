@@ -30,7 +30,7 @@ const Home = () => {
         <Col className="Home__Header">
           <div className="">
             <p>Welcome!</p>
-            <p>CryptoHouse</p>
+            <p>Cryptic World</p>
           </div>
         </Col>
       </Row>
