@@ -1,10 +1,7 @@
 /* eslint-disable max-len */
 import { useDispatch, useSelector } from 'react-redux';
-import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import { Link } from 'react-router-dom';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { useEffect, useState } from 'react';
 import { getAssests } from '../Redux/cryptoSlice';
 
@@ -25,51 +22,67 @@ const Home = () => {
   );
 
   return (
-    <Container>
-      <Row>
-        <Col className="Home__Header">
-          <div className="">
-            <p>Welcome!</p>
-            <p>Cryptic World</p>
+    <div>
+      <div>
+        <div className="Header">
+          <div className="Header__Container">
+            <p className="Header__Container__Title">One Place</p>
+            <p className="Header__Container__Description">
+              All the Crypto Information you need!
+            </p>
           </div>
-        </Col>
-      </Row>
-      <Row className="">
-        <div className="">
-          <span>Filter:</span>
-          <input type="text" size="sm" value={searchcoin} onChange={onSearch} />
         </div>
-      </Row>
-      <Row className="">
-        {searched.map((asset) => (
-          <Col
-            xs={6}
-            className=""
-            Key={`${asset.asset_id}${Math.random * 10}`}
+      </div>
+
+      <div className="Filter">
+        <div className="Filter__Container">
+          <span className="Filter__Container__Title">Filter:</span>
+          <input
+            className="Filter__Container__Input"
+            type="text"
+            value={searchcoin}
+            onChange={onSearch}
+          />
+        </div>
+      </div>
+
+      <div className="Cryptos">
+        {searched.map((asset, index) => (
+          <Link
+            className={`Cryptos__Item${(index + 1) % 4}`}
+            key={asset.id}
+            to={`/crypto/${asset.id}`}
+            style={{ textDecoration: 'none' }}
           >
-            <Link
-              className=""
-              Key={asset.asset_id}
-              to={`/crypto/${asset.id}`}
-            >
-              <Row className="">
-                <p>{asset.price}</p>
-              </Row>
-              <Row>
-                <Col>
-                  <Image className="" src={asset.icon} />
-                </Col>
-                <Col className="">
-                  <span className="">{asset.symbol}</span>
-                  <span className="">{asset.name}</span>
-                </Col>
-              </Row>
-              <Row />
-            </Link>
-          </Col>
+            <div className="price">
+              <p>
+                Current Price:
+                {' '}
+                {asset.price}
+              </p>
+            </div>
+            <div className="ImageContainer">
+              <div>
+                <Image className="Image" src={asset.icon} />
+              </div>
+            </div>
+            <div className="details">
+              <span className="">
+                Symbol:
+                {' '}
+                {asset.symbol}
+              </span>
+              <span className="">
+                Name:
+                {' '}
+                {asset.name}
+              </span>
+            </div>
+            <div />
+          </Link>
         ))}
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 };
 export default Home;
