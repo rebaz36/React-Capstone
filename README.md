@@ -9,7 +9,7 @@
 - [Crypto API](https://api.coinstats.app/public/v1/coins/) 
 ## Live Demo
 
-Will be update when availabl! [Live Demo]()
+[Live Demo](https://rebaz36.github.io/React-Capstone/)
 
 # Getting Started with React App
 
