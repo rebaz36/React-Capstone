@@ -78,6 +78,7 @@ const Home = () => {
               <p className="">
                 Current Price:
                 {' '}
+                ~
                 {formatter.format(Math.round(asset.price) === 0 ? asset.price : Math.round(asset.price))}
               </p>
             </div>
