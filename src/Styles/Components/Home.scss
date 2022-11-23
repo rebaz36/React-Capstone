@@ -1,25 +1,9 @@
-Container {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: black;
-}
-
-Row {
-  margin: 0;
-  padding: 0;
-}
-
-Cols {
-  margin: 0;
-  padding: 0;
-}
-
 .Header {
   width: 100%;
   background-image: url(../../Assets/Header_BG.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
-  background-size: cover;
   color: white;
   padding: 0;
   margin: 0;
@@ -120,7 +104,7 @@ Cols {
     }
   }
 
-    &__Item1 {
+  &__Item1 {
     width: 50%;
     height: 15rem;
     display: flex;
@@ -131,16 +115,16 @@ Cols {
     color: white;
     background: linear-gradient(135deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
     border: rgba(160,235,255,1) solid 1px;
+
     p {
       font-weight: 900;
       background: -webkit-linear-gradient(grey, black);
       -webkit-background-clip: text;
-      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
 
-    &__Item2 {
+  &__Item2 {
     width: 50%;
     height: 15rem;
     display: flex;
@@ -160,7 +144,7 @@ Cols {
     }
   }
 
-    &__Item0 {
+  &__Item0 {
     width: 50%;
     height: 15rem;
     display: flex;
