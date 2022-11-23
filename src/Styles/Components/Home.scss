@@ -95,11 +95,11 @@
     color: white;
     background: linear-gradient(45deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
     border: #2968bc solid 1px;
+
     p {
       font-weight: 900;
       background: -webkit-linear-gradient(grey, white);
       -webkit-background-clip: text;
-      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
@@ -114,7 +114,7 @@
     text-decoration: none;
     color: white;
     background: linear-gradient(135deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
-    border: rgba(160,235,255,1) solid 1px;
+    border: rgba(160, 235, 255, 1) solid 1px;
 
     p {
       font-weight: 900;
@@ -135,11 +135,11 @@
     color: white;
     background: linear-gradient(225deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
     border: #2968bc solid 1px;
+
     p {
       font-weight: 900;
       background: -webkit-linear-gradient(grey, black);
       -webkit-background-clip: text;
-      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
@@ -155,16 +155,14 @@
     color: white;
     background: linear-gradient(-45deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
     border: rgba(160, 235, 255, 1) solid 1px;
+
     p {
       font-weight: 900;
       background: -webkit-linear-gradient(grey, white);
       -webkit-background-clip: text;
-      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
   }
-
 }
 
 .ImageContainer {
@@ -181,7 +179,7 @@
 
 .Image:hover {
   box-shadow: 0 0.2rem 0.4rem 0.4rem rgb(34, 78, 255);
-  transition: transform .4s;
+  transition: transform 0.4s;
   transform: scale(1.3);
 }
 
