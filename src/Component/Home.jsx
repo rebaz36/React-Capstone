@@ -57,7 +57,7 @@ const Home = () => {
           <Link
             className={`Cryptos__Item${(index + 1) % 4}`}
             key={asset.id}
-            to={`/crypto/${asset.id}`}
+            to={`crypto/${asset.id}`}
             style={{ textDecoration: 'none' }}
           >
             <div className="ImageContainer">
