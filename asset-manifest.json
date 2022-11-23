@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/React-Capstone/static/css/main.870fafe1.css",
-    "main.js": "/React-Capstone/static/js/main.32e75bd8.js",
+    "main.js": "/React-Capstone/static/js/main.cf582a76.js",
     "static/media/Header_BG.jpg": "/React-Capstone/static/media/Header_BG.0dd8a32cbae9fc1ba230.jpg",
     "index.html": "/React-Capstone/index.html",
     "main.870fafe1.css.map": "/React-Capstone/static/css/main.870fafe1.css.map",
-    "main.32e75bd8.js.map": "/React-Capstone/static/js/main.32e75bd8.js.map"
+    "main.cf582a76.js.map": "/React-Capstone/static/js/main.cf582a76.js.map"
   },
   "entrypoints": [
     "static/css/main.870fafe1.css",
-    "static/js/main.32e75bd8.js"
+    "static/js/main.cf582a76.js"
   ]
 }
