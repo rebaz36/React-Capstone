@@ -19,8 +19,8 @@ const Home = () => {
   };
   const searched = assetList.filter(
     (filteredCoin) => filteredCoin.name.toLowerCase()
-      .includes(searchcoin.toLowerCase()) || filteredCoin.symbol.toLowerCase().
-      includes(searchcoin.toLowerCase()),
+      .includes(searchcoin.toLowerCase()) || filteredCoin.symbol.toLowerCase()
+      .includes(searchcoin.toLowerCase()),
   );
 
   const formatter = new Intl.NumberFormat('en-US', {
@@ -57,7 +57,7 @@ const Home = () => {
           <Link
             className={`Cryptos__Item${(index + 1) % 4}`}
             key={asset.id}
-            to={`/crypto/${asset.id}`}
+            to={`React-Capstone/crypto/${asset.id}`}
             style={{ textDecoration: 'none' }}
           >
             <div className="ImageContainer">
