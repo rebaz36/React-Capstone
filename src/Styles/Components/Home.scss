@@ -1,9 +1,171 @@
-.Home__Header {
+Container {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
+
+Row {
+  margin: 0;
+  padding: 0;
+}
+
+Cols {
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  width: 100%;
+  background-image: url(../../Assets/Header_BG.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   text-align: center;
-  font-weight: 700;
-  font-size: 6vh;
-  height: 40vh;
-  padding: 5vh;
-  background-size: contain;
+  background-size: cover;
   color: white;
+  padding: 0;
+  margin: 0;
+
+  &__Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__Title {
+      text-shadow: 2px 2px red;
+      font-weight: 900;
+      font-size: 6vw;
+    }
+
+    &__Description {
+      font-size: 4vw;
+      font-weight: 400;
+    }
+  }
+}
+
+.Filter {
+  display: flex;
+  padding: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(34, 78, 255);
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem 0.1rem rgb(34, 78, 255);
+
+    &__Title {
+      color: rgb(34, 78, 255);
+      font-size: 4vw;
+      font-weight: 900;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__Input {
+      width: 100%;
+      height: 2rem;
+      border: none;
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    &__Input:focus {
+      outline: none;
+    }
+  }
+
+  &__Container:hover {
+    box-shadow: 0 0 1rem 0.5rem rgb(34, 78, 255);
+  }
+}
+
+.Cryptos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__Item3 {
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgba(0,99,255,1) 0%, rgba(61,142,255,1) 40%, rgba(54,181,255,1) 76%, rgba(160,235,255,1) 100%);
+  }
+
+    &__Item1 {
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgba(160,235,255,1) 0%, rgba(54,181,255,1) 40%, rgba(61,142,255,1) 76%, rgba(0,99,255,1) 100%);
+  }
+
+    &__Item2 {
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgba(160,235,255,1) 0%, rgba(54,181,255,1) 40%, rgba(61,142,255,1) 76%, rgba(0,99,255,1) 100%);
+  }
+
+    &__Item0 {
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none; /* no underline */
+    color: white;
+    background: linear-gradient(90deg, rgba(0,99,255,1) 0%, rgba(61,142,255,1) 40%, rgba(54,181,255,1) 76%, rgba(160,235,255,1) 100%);
+  }
+}
+
+.ImageContainer {
+  width: 5rem;
+  height: 5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.Image {
+  border-radius: 20%;
+  border: white solid 2px;
+  box-shadow: 0 0.4rem 0.8rem 0.4rem white;
+}
+
+.details {
+  padding: 2.5rem;
+}
+
+.price {
+  padding: 2.5rem;
 }
