@@ -1,28 +1,19 @@
-*,
-*::after,
-*::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100vw;
-  height: 100vh;
-  background-color: #c7c7c7;
-}
-
 #root {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   font-family: -apple-system, "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 ul {
   list-style: none;
+}
+
+a:hover {
+  color: white;
+}
+
+p {
+  margin: 0;
 }
