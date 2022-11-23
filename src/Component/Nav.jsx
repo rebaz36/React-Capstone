@@ -6,7 +6,7 @@ import BackIcon from '../Assets/BackIcon';
 const Nav = ({ back = false }) => (
   <nav className="NavBar">
     {back ? (
-      <Link to="/" className="NavBar__Back">
+      <Link to="/React-Capstone/" className="NavBar__Back">
         <BackIcon />
       </Link>
     ) : (

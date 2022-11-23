@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { useDispatch, useSelector } from 'react-redux';
 import Image from 'react-bootstrap/Image';
 import { Link } from 'react-router-dom';
@@ -19,7 +18,9 @@ const Home = () => {
     setSearchcoin(e.target.value);
   };
   const searched = assetList.filter(
-    (filteredCoin) => filteredCoin.name.toLowerCase().includes(searchcoin.toLowerCase()) || filteredCoin.symbol.toLowerCase().includes(searchcoin.toLowerCase()),
+    (filteredCoin) => filteredCoin.name.toLowerCase()
+      .includes(searchcoin.toLowerCase()) || filteredCoin.symbol.toLowerCase()
+      .includes(searchcoin.toLowerCase()),
   );
 
   const formatter = new Intl.NumberFormat('en-US', {
@@ -56,7 +57,7 @@ const Home = () => {
           <Link
             className={`Cryptos__Item${(index + 1) % 4}`}
             key={asset.id}
-            to={`/crypto/${asset.id}`}
+            to={`crypto/${asset.id}`}
             style={{ textDecoration: 'none' }}
           >
             <div className="ImageContainer">
@@ -79,7 +80,8 @@ const Home = () => {
                 Current Price:
                 {' '}
                 ~
-                {formatter.format(Math.round(asset.price) === 0 ? asset.price : Math.round(asset.price))}
+                {formatter
+                  .format(Math.round(asset.price) === 0 ? asset.price : Math.round(asset.price))}
               </p>
             </div>
           </Link>
