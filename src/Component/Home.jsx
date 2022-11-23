@@ -21,6 +21,11 @@ const Home = () => {
     (filteredCoin) => filteredCoin.name.toLowerCase().includes(searchcoin.toLowerCase()) || filteredCoin.symbol.toLowerCase().includes(searchcoin.toLowerCase()),
   );
 
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
+
   return (
     <div>
       <div>
@@ -54,31 +59,28 @@ const Home = () => {
             to={`/crypto/${asset.id}`}
             style={{ textDecoration: 'none' }}
           >
-            <div className="price">
-              <p>
-                Current Price:
-                {' '}
-                {asset.price}
-              </p>
-            </div>
             <div className="ImageContainer">
               <div>
                 <Image className="Image" src={asset.icon} />
               </div>
             </div>
             <div className="details">
-              <span className="">
-                Symbol:
-                {' '}
-                {asset.symbol}
-              </span>
-              <span className="">
+              <p>
                 Name:
                 {' '}
                 {asset.name}
-              </span>
+              </p>
+              <p className="">
+                Symbol:
+                {' '}
+                {asset.symbol}
+              </p>
+              <p className="">
+                Current Price:
+                {' '}
+                {formatter.format(Math.round(asset.price) === 0 ? asset.price : Math.round(asset.price))}
+              </p>
             </div>
-            <div />
           </Link>
         ))}
       </div>
