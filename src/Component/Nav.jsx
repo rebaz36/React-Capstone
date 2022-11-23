@@ -1,8 +1,18 @@
-// import './Nav.css';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { Image } from 'react-bootstrap';
+import BackIcon from '../Assets/BackIcon';
 
-const Nav = () => (
+const Nav = ({ back = false }) => (
   <nav className="NavBar">
+    {back ? (
+      <Link to="/" className="NavBar__Back">
+        <BackIcon />
+      </Link>
+    ) : (
+      ''
+    )}
+
     <h1 className="NavBar__Title">Cryptic</h1>
     <Image
       className="NavBar__Image"
