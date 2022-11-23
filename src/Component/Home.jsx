@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getAssests } from '../Redux/cryptoSlice';
+import Nav from './Nav';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -27,15 +28,14 @@ const Home = () => {
   });
 
   return (
-    <div>
-      <div>
-        <div className="Header">
-          <div className="Header__Container">
-            <p className="Header__Container__Title">One Place</p>
-            <p className="Header__Container__Description">
-              All the Crypto Information you need!
-            </p>
-          </div>
+    <>
+      <Nav />
+      <div className="Header">
+        <div className="Header__Container">
+          <p className="Header__Container__Title">One Place</p>
+          <p className="Header__Container__Description">
+            All the Crypto Information you need!
+          </p>
         </div>
       </div>
 
@@ -85,7 +85,7 @@ const Home = () => {
           </Link>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 export default Home;
