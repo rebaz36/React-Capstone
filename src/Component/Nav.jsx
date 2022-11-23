@@ -23,3 +23,11 @@ const Nav = ({ back = false }) => (
 );
 
 export default Nav;
+
+Nav.defaultProps = {
+  back: false,
+};
+
+Nav.propTypes = {
+  back: PropTypes.bool,
+};
