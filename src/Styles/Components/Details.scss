@@ -28,3 +28,15 @@
   }
 }
 
+.background {
+  width: 100%;
+  height: 100%;
+}
+
+.Details:nth-of-type(3n) .background {
+  background: #ffffff;
+}
+
+.Details:nth-of-type(2n) .background {
+  background: red;
+}

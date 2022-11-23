@@ -28,32 +28,32 @@ const Detail = () => {
           )}
         </p>
       </div>
-      <div>
-        <div className="">
+      <div className="Details">
+        <div className="background">
           <span className="">Coin name :</span>
           <span>{detail.name}</span>
         </div>
-        <div className="">
+        <div className="background">
           <span className="">Coin symbol :</span>
           <span>{detail.symbol}</span>
         </div>
-        <div className="">
+        <div className="background">
           <span className="">Ranking :</span>
           <span>{detail.rank}</span>
         </div>
-        <div className="">
+        <div className="background">
           <span className="">Price :</span>
           <span>{detail.price}</span>
         </div>
-        <div className="">
+        <div className="background">
           <span className=""> Market cap :</span>
           <span>{detail.marketCap}</span>
         </div>
-        <div className="">
+        <div className="background">
           <span className=""> Price change week :</span>
           <span>{detail.priceChange1w}</span>
         </div>
-        <div className="">
+        <div className="background">
           <span className=""> Avail. supply :</span>
           <span>{detail.availableSupply}</span>
         </div>
