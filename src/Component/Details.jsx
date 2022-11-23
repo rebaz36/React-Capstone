@@ -1,11 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Image } from 'react-bootstrap';
-import Container from 'react-bootstrap/Container';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { getDetail } from '../Redux/detailSlice';
+import Nav from './Nav';
 
 const Detail = () => {
   const data = useParams();
@@ -14,50 +12,78 @@ const Detail = () => {
   useEffect(() => {
     dispatch(getDetail(data.id));
   });
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
   return (
-    <Container>
-      <Row>
-        <Col className="">
-          <div className="">
-            <Image src={detail.icon} />
-            <p className="">
-              $
-              {detail.price}
-            </p>
+    <>
+      <Nav back />
+      <div className="Container">
+        <div className="Icon_Container">
+          <Image src={detail.icon} />
+          <p>
+            ~
+            {formatter.format(
+              Math.round(detail.price) === 0
+                ? detail.price
+                : Math.round(detail.price),
+            )}
+          </p>
+        </div>
+        <div className="Details">
+          <div className="background">
+            <span>Coin name :</span>
+            <span>{detail.name}</span>
           </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={12} className="">
-          <span className="">Coin name :</span>
-          <span>{detail.name}</span>
-        </Col>
-        <Col xs={12} className="">
-          <span className="">Coin symbol :</span>
-          <span>{detail.symbol}</span>
-        </Col>
-        <Col xs={12} className="">
-          <span className="">Ranking :</span>
-          <span>{detail.rank}</span>
-        </Col>
-        <Col xs={12} className="">
-          <span className="">Price :</span>
-          <span>{detail.price}</span>
-        </Col>
-        <Col xs={12} className="">
-          <span className=""> Market cap :</span>
-          <span>{detail.marketCap}</span>
-        </Col>
-        <Col xs={12} className="">
-          <span className=""> Price change week :</span>
-          <span>{detail.priceChange1w}</span>
-        </Col>
-        <Col xs={12} className="">
-          <span className=""> Avail. supply :</span>
-          <span>{detail.availableSupply}</span>
-        </Col>
-      </Row>
-    </Container>
+          <div className="background">
+            <span>Coin symbol :</span>
+            <span>{detail.symbol}</span>
+          </div>
+          <div className="background">
+            <span>Ranking :</span>
+            <span>{detail.rank}</span>
+          </div>
+          <div className="background">
+            <span>Price :</span>
+            <span>
+              {' '}
+              {formatter.format(
+                Math.round(detail.price) === 0
+                  ? detail.price
+                  : Math.round(detail.price),
+              )}
+            </span>
+          </div>
+          <div className="background">
+            <span> Cap :</span>
+            <span>
+              {' '}
+              {formatter.format(
+                Math.round(detail.marketCap) === 0
+                  ? detail.price
+                  : Math.round(detail.marketCap),
+              )}
+            </span>
+          </div>
+          <div className="background">
+            <span> Price change week :</span>
+            <span>{detail.priceChange1w}</span>
+          </div>
+          <div className="background">
+            <span> Supply :</span>
+            <span>
+              ~
+              {formatter.format(
+                Math.round(detail.availableSupply) === 0
+                  ? detail.price
+                  : Math.round(detail.availableSupply),
+              )}
+            </span>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

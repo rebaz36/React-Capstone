@@ -1,12 +1,10 @@
 /* eslint-disable max-len */
 import { useDispatch, useSelector } from 'react-redux';
-import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import { Link } from 'react-router-dom';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { useEffect, useState } from 'react';
 import { getAssests } from '../Redux/cryptoSlice';
+import Nav from './Nav';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -24,52 +22,70 @@ const Home = () => {
     (filteredCoin) => filteredCoin.name.toLowerCase().includes(searchcoin.toLowerCase()) || filteredCoin.symbol.toLowerCase().includes(searchcoin.toLowerCase()),
   );
 
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
+
   return (
-    <Container>
-      <Row>
-        <Col className="">
-          <div className="">
-            <p>Welcome!</p>
-            <p>CryptoHouse</p>
-          </div>
-        </Col>
-      </Row>
-      <Row className="">
-        <div className="">
-          <span>Filter:</span>
-          <input type="text" size="sm" value={searchcoin} onChange={onSearch} />
+    <>
+      <Nav />
+      <div className="Header">
+        <div className="Header__Container">
+          <p className="Header__Container__Title">One Place</p>
+          <p className="Header__Container__Description">
+            All the Crypto Information you need!
+          </p>
         </div>
-      </Row>
-      <Row className="">
-        {searched.map((asset) => (
-          <Col
-            xs={6}
-            className=""
-            Key={`${asset.asset_id}${Math.random * 10}`}
+      </div>
+
+      <div className="Filter">
+        <div className="Filter__Container">
+          <span className="Filter__Container__Title">Filter:</span>
+          <input
+            className="Filter__Container__Input"
+            type="text"
+            value={searchcoin}
+            onChange={onSearch}
+          />
+        </div>
+      </div>
+
+      <div className="Cryptos">
+        {searched.map((asset, index) => (
+          <Link
+            className={`Cryptos__Item${(index + 1) % 4}`}
+            key={asset.id}
+            to={`/crypto/${asset.id}`}
+            style={{ textDecoration: 'none' }}
           >
-            <Link
-              className=""
-              Key={asset.asset_id}
-              to={`/crypto/${asset.id}`}
-            >
-              <Row className="">
-                <p>{asset.price}</p>
-              </Row>
-              <Row>
-                <Col>
-                  <Image className="" src={asset.icon} />
-                </Col>
-                <Col className="">
-                  <span className="">{asset.symbol}</span>
-                  <span className="">{asset.name}</span>
-                </Col>
-              </Row>
-              <Row />
-            </Link>
-          </Col>
+            <div className="ImageContainer">
+              <div>
+                <Image className="Image" src={asset.icon} />
+              </div>
+            </div>
+            <div className="details">
+              <p>
+                Name:
+                {' '}
+                {asset.name}
+              </p>
+              <p className="">
+                Symbol:
+                {' '}
+                {asset.symbol}
+              </p>
+              <p className="">
+                Current Price:
+                {' '}
+                ~
+                {formatter.format(Math.round(asset.price) === 0 ? asset.price : Math.round(asset.price))}
+              </p>
+            </div>
+          </Link>
         ))}
-      </Row>
-    </Container>
+      </div>
+    </>
   );
 };
 export default Home;
