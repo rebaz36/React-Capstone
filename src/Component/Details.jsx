@@ -19,7 +19,7 @@ const Detail = () => {
     <div className="Container">
       <div className="Icon_Container">
         <Image src={detail.icon} />
-        <p className="">
+        <p>
           ~
           {formatter.format(
             Math.round(detail.price) === 0
@@ -30,32 +30,53 @@ const Detail = () => {
       </div>
       <div className="Details">
         <div className="background">
-          <span className="">Coin name :</span>
+          <span>Coin name :</span>
           <span>{detail.name}</span>
         </div>
         <div className="background">
-          <span className="">Coin symbol :</span>
+          <span>Coin symbol :</span>
           <span>{detail.symbol}</span>
         </div>
         <div className="background">
-          <span className="">Ranking :</span>
+          <span>Ranking :</span>
           <span>{detail.rank}</span>
         </div>
         <div className="background">
-          <span className="">Price :</span>
-          <span>{detail.price}</span>
+          <span>Price :</span>
+          <span>
+            {' '}
+            {formatter.format(
+              Math.round(detail.price) === 0
+                ? detail.price
+                : Math.round(detail.price),
+            )}
+          </span>
         </div>
         <div className="background">
-          <span className=""> Market cap :</span>
-          <span>{detail.marketCap}</span>
+          <span> Cap :</span>
+          <span>
+            {' '}
+            {formatter.format(
+              Math.round(detail.marketCap) === 0
+                ? detail.price
+                : Math.round(detail.marketCap),
+            )}
+          </span>
         </div>
         <div className="background">
-          <span className=""> Price change week :</span>
+          <span> Price change week :</span>
           <span>{detail.priceChange1w}</span>
         </div>
         <div className="background">
-          <span className=""> Avail. supply :</span>
-          <span>{detail.availableSupply}</span>
+          <span> Supply :</span>
+          <span>
+            ~
+            {formatter.format(
+              Math.round(detail.availableSupply) === 0
+                ? detail.price
+                : Math.round(detail.availableSupply),
+            )}
+          </span>
         </div>
       </div>
     </div>
