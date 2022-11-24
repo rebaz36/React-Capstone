@@ -27,9 +27,7 @@
 
 # 📖 [Cryptic World] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[Cryptic World]** is a...
+**[Cryptic World]** is a Project that uses a Crypto API, to fetch data about Crypto Currencies, and information about them it displays them in the home page, and allows user to filter them. user can also navigate to details page by clicking on a crypto and see more information
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -48,8 +46,6 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **[Searching Through the available Crypto Currencies]**
 - **[Viewing Details on any Crypto Currencies]**
@@ -93,7 +89,6 @@ Example commands:
   cd React-Capstone
   git clone git@github.com:rebaz36/React-Capstone.git
 ```
--
 
 ### Install
 
@@ -106,7 +101,6 @@ Example command:
   cd React-Capstone
   npm install or npm i
 ```
--
 
 ### Usage
 
@@ -118,7 +112,6 @@ Example command:
 ```sh
   npm run start
 ```
--
 
 ### Run tests
 
@@ -130,7 +123,6 @@ Example command:
 ```sh
   npm run test
 ```
--
 
 ### Deployment
 
@@ -149,8 +141,6 @@ Example:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author1: Rebaz Farid**
 
