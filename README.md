@@ -25,9 +25,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Cryptic World] <a name="about-project"></a>
+# 📖 Cryptic World <a name="about-project"></a>
 
-**[Cryptic World]** is a Project that uses a Crypto API, to fetch data about Crypto Currencies, and information about them it displays them in the home page, and allows user to filter them. user can also navigate to details page by clicking on a crypto and see more information
+**Cryptic World** is a Project that uses a Crypto API, to fetch data about Crypto Currencies, and information about them it displays them in the home page, and allows user to filter them. user can also navigate to details page by clicking on a crypto and see more information
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,10 +47,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Searching Through the available Crypto Currencies]**
-- **[Viewing Details on any Crypto Currencies]**
-- **[Going back to Previous Page]**
-- **[Stroing Data in Redux Store]**
+- **Searching Through the available Crypto Currencies**
+- **Viewing Details on any Crypto Currencies**
+- **Going back to Previous Pag**
+- **Stroing Data in Redux Store**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,7 +59,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo](https://rebaz36.github.io/React-Capstone/)
-- [Loom Video Pesentation](https://www.loom.com/share/6ec49865b5634a4fa8e74c5d75fb49c9)
+- [Loom Video Pesentation](https://www.loom.com/share/93a75a6d92874aa2b6209784f258926c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,9 +154,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[About Page]**
-- [ ] **[Not Found Page]**
-- [ ] **[Filter by Value]**
+- [ ] **About Page**
+- [ ] **Not Found Page**
+- [ ] **Filter by Value**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
