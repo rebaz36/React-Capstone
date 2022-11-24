@@ -1,0 +1,10 @@
+@import-normalize;
+
+// Globals and other styles before the components
+// And pages take effect!
+@import "./global.scss";
+
+// Components, put component B that depends on A after A's import
+@import "./Components/Nav.scss";
+@import "./Components/Home.scss";
+@import "./Components/Details.scss";

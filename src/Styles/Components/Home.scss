@@ -1,0 +1,201 @@
+.Header {
+  width: 100%;
+  background-image: url(../../Assets/Header_BG.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  color: white;
+  padding: 0;
+  margin: 0;
+
+  &__Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__Title {
+      text-shadow: 2px 2px red;
+      font-weight: 900;
+      font-size: 6vw;
+    }
+
+    &__Description {
+      font-size: 4vw;
+      font-weight: 400;
+    }
+  }
+}
+
+.Filter {
+  display: flex;
+  padding: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(34, 78, 255);
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem 0.1rem rgb(34, 78, 255);
+
+    &__Title {
+      color: rgb(34, 78, 255);
+      font-size: 4vw;
+      font-weight: 900;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__Input {
+      width: 100%;
+      height: 2rem;
+      border: none;
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    &__Input:focus {
+      outline: none;
+    }
+  }
+
+  &__Container:hover {
+    box-shadow: 0 0 1rem 0.5rem rgb(34, 78, 255);
+  }
+}
+
+.Cryptos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__Item3 {
+    margin: 2%;
+    width: 45%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
+    border: #2968bc solid 1px;
+    border-radius: 1rem;
+
+    p {
+      font-weight: 900;
+      background: -webkit-linear-gradient(grey, white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__Item1 {
+    margin: 2%;
+    width: 45%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
+    border: rgba(160, 235, 255, 1) solid 1px;
+    border-radius: 1rem;
+
+    p {
+      font-weight: 900;
+      background: -webkit-linear-gradient(grey, black);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__Item2 {
+    margin: 2%;
+    width: 45%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(225deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
+    border: #2968bc solid 1px;
+    border-radius: 1rem;
+
+    p {
+      font-weight: 900;
+      background: -webkit-linear-gradient(grey, black);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__Item0 {
+    margin: 2%;
+    width: 45%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none; /* no underline */
+    color: white;
+    background: linear-gradient(-45deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
+    border: rgba(160, 235, 255, 1) solid 1px;
+    border-radius: 1rem;
+
+    p {
+      font-weight: 900;
+      background: -webkit-linear-gradient(grey, white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.ImageContainer {
+  margin: 0;
+}
+
+.Image {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 30%;
+  border: white solid 2px;
+  box-shadow: 0 0.4rem 0.8rem 0.4rem white;
+}
+
+.Image:hover {
+  box-shadow: 0 0.2rem 0.4rem 0.4rem rgb(34, 78, 255);
+  transition: transform 0.4s;
+  transform: scale(1.3);
+}
+
+.details {
+  width: 80%;
+  padding: 0.5rem 0.5rem;
+}
+
+.price {
+  padding: 0.5rem 0.5rem;
+}
