@@ -11,6 +11,9 @@
 
 [Live Demo](https://rebaz36.github.io/React-Capstone/)
 
+# Design
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
 # Getting Started with React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
