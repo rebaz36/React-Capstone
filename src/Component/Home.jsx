@@ -3,6 +3,7 @@ import Image from 'react-bootstrap/Image';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getAssests } from '../Redux/cryptoSlice';
+import SearchBarIcon from '../Assets/SearchBarIcon';
 import Nav from './Nav';
 
 const Home = () => {
@@ -28,6 +29,14 @@ const Home = () => {
     currency: 'USD',
   });
 
+  const onActive = (e) => {
+    e.target.placeholder = '';
+  };
+
+  const onInActive = (e) => {
+    e.target.placeholder = 'What is that you are looking for?';
+  };
+
   return (
     <>
       <Nav />
@@ -42,12 +51,15 @@ const Home = () => {
 
       <div className="Filter">
         <div className="Filter__Container">
-          <span className="Filter__Container__Title">Filter:</span>
+          <span className="Filter__Container__Title"><SearchBarIcon /></span>
           <input
             className="Filter__Container__Input"
             type="text"
+            placeholder="What is that you are looking for?"
             value={searchcoin}
             onChange={onSearch}
+            onFocus={onActive}
+            onBlur={onInActive}
           />
         </div>
       </div>

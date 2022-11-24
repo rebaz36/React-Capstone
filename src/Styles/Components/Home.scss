@@ -80,12 +80,13 @@
 .Cryptos {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 
   &__Item3 {
-    width: 50%;
+    margin: 2%;
+    width: 45%;
     height: 15rem;
     display: flex;
     flex-direction: column;
@@ -95,6 +96,7 @@
     color: white;
     background: linear-gradient(45deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
     border: #2968bc solid 1px;
+    border-radius: 1rem;
 
     p {
       font-weight: 900;
@@ -105,7 +107,8 @@
   }
 
   &__Item1 {
-    width: 50%;
+    margin: 2%;
+    width: 45%;
     height: 15rem;
     display: flex;
     flex-direction: column;
@@ -115,6 +118,7 @@
     color: white;
     background: linear-gradient(135deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
     border: rgba(160, 235, 255, 1) solid 1px;
+    border-radius: 1rem;
 
     p {
       font-weight: 900;
@@ -125,7 +129,8 @@
   }
 
   &__Item2 {
-    width: 50%;
+    margin: 2%;
+    width: 45%;
     height: 15rem;
     display: flex;
     flex-direction: column;
@@ -135,6 +140,7 @@
     color: white;
     background: linear-gradient(225deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
     border: #2968bc solid 1px;
+    border-radius: 1rem;
 
     p {
       font-weight: 900;
@@ -145,7 +151,8 @@
   }
 
   &__Item0 {
-    width: 50%;
+    margin: 2%;
+    width: 45%;
     height: 15rem;
     display: flex;
     flex-direction: column;
@@ -155,6 +162,7 @@
     color: white;
     background: linear-gradient(-45deg, #2968bc 10%, rgba(61, 142, 255, 1) 40%, rgba(54, 181, 255, 1) 60%, rgba(160, 235, 255, 1) 100%);
     border: rgba(160, 235, 255, 1) solid 1px;
+    border-radius: 1rem;
 
     p {
       font-weight: 900;
