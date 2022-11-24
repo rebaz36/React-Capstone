@@ -14,6 +14,10 @@
 # Design
 Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
+# Loom Video Presentation
+
+[Video Pesentation](https://www.loom.com/share/6ec49865b5634a4fa8e74c5d75fb49c9)
+
 # Getting Started with React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
