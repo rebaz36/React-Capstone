@@ -11,6 +11,10 @@
 
 [Live Demo](https://rebaz36.github.io/React-Capstone/)
 
+# Loom Video Presentation
+
+[Video Pesentation](https://www.loom.com/share/6ec49865b5634a4fa8e74c5d75fb49c9)
+
 # Design
 Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
