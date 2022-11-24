@@ -1,55 +1,156 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# Cryptic World
+<!-- Table of Contents -->
+# 📗 Table of Contents
 
-## Built With
-- React
-- Redux
-- Scss
-- [Crypto API](https://api.coinstats.app/public/v1/coins/) 
-## Live Demo
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-[Live Demo](https://rebaz36.github.io/React-Capstone/)
+<!-- PROJECT DESCRIPTION -->
 
-# Design
-Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+# 📖 [Cryptic World] <a name="about-project"></a>
 
-# Loom Video Presentation
+> Describe your project in 1 or 2 sentences.
 
-[Video Pesentation](https://www.loom.com/share/6ec49865b5634a4fa8e74c5d75fb49c9)
+**[Cryptic World]** is a...
 
-# Getting Started with React App
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+    <li><a href="https://sass-lang.com/">Scss</a></li>
+    <li><a href="https://api.coinstats.app/public/v1/coins/">Crypto API</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[Searching Through the available Crypto Currencies]**
+- **[Viewing Details on any Crypto Currencies]**
+- **[Going back to Previous Page]**
+- **[Stroing Data in Redux Store]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo](https://rebaz36.github.io/React-Capstone/)
+- [Loom Video Pesentation](https://www.loom.com/share/6ec49865b5634a4fa8e74c5d75fb49c9)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started with React App <a name="getting-started"></a>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+To get a local copy up and running, follow these steps.
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm run start`
+In order to run this project you need:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js
+- NPM Package Manager
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Setup
 
-### `npm run test`
+Clone this repository to your desired folder:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Example commands:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+  cd React-Capstone
+  git clone git@github.com:rebaz36/React-Capstone.git
+```
+-
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install this project with:
 
-## Authors
+
+Example command:
+
+```
+  cd React-Capstone
+  npm install or npm i
+```
+-
+
+### Usage
+
+To run the project, execute the following command:
+
+
+Example command:
+
+```sh
+  npm run start
+```
+-
+
+### Run tests
+
+To run tests, run the following command:
+
+
+Example command:
+
+```sh
+  npm run test
+```
+-
+
+### Deployment
+
+You can deploy this project using:
+
+
+Example:
+
+```sh
+  npm run deploy
+```
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+> Mention all of the collaborators of this project.
 
 👤 **Author1: Rebaz Farid**
 
@@ -57,23 +158,49 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - Twitter: [@rebaz415](https://twitter.com/rebaz415)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rebazf/)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[About Page]**
+- [ ] **[Not Found Page]**
+- [ ] **[Filter by Value]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+<!-- SUPPORT -->
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-List of Aknnowledgments goes here
-- React Documemtation
-- Redux Documentation
-- W3School
+If you like this project and want to support me make cooler projects Give this project a Star.
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+
+I would like to thank Nelson Sakwa on Behance for the [Original design idea](https://www.behance.net/sakwadesignstudio).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
